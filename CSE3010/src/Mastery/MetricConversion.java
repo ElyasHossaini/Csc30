@@ -86,7 +86,7 @@ public class MetricConversion {
 		}
 	
 	
-	  formula.setText("" + Con + "");
+	  formula.setText(Con);
 	
 	
         }
