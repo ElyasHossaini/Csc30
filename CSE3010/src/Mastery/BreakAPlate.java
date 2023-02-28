@@ -5,10 +5,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.Action;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
@@ -73,29 +71,31 @@ public class BreakAPlate {
 		JButton Play = new JButton("Play");
 		Play.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int number = (int)Math.random()*100000;
+				double number1 = Math.random() * 2;
 				
-				if((number / 2) % 2 == 0)
+				
+				if(Math.round(number1) % 2.0 == 0)
 				{
 					Plate.setIcon(AllBroken);
 					WinImage.setIcon(Tiger);
 					Win.setText("You Win a Tiger!");
+					Play.setText("Play Again?");
 				}
 				else
 				{
 					Plate.setIcon(TwoBroken);
 					WinImage.setIcon(Stickers);
-					Win.setText("You win a Sticker!");
+					Win.setText("You Win a Sticker!");
+					Play.setText("Play Again?");
 				}
 				
-				System.out.println(number);
 				
 			
 	
 			
 			}
 		});
-		Play.setBounds(174, 125, 89, 23);
+		Play.setBounds(165, 124, 120, 35);
 		frame.getContentPane().add(Play);
 		
 		
