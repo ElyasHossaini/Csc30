@@ -1,0 +1,40 @@
+1.	What is a GUI?
+
+A GUI is a graphical user interface, designed
+to make computers more user friendly and visually
+appealing. They allow users to easily interact with
+a computer through its graphic display.
+
+
+2.	Explain how code is executed in an event-driven application.
+
+In an event-driven application, the programmer of the GUI is
+not in complete control of the executed code. A lot of the code
+is auto generated when the user inserts components such as a JLabel or Jbutton.
+
+
+3.	Can components be added directly to a frame? Explain.
+No, components cannot be added directly to a frame.
+In order to do so, a programmer would need to use a content panel or label.
+
+
+4.	Can a label respond to events? Explain
+
+No, a label cannot respond to events 
+or be altered by the user. It can only display text.
+
+
+5.	Why do you think a GUI needs to be run from an event-dispatching thread?
+
+GUIs need to be run from an event-dispatching thread because they run in an
+infinite loop. This is necessary for the GUI, as the program will only end
+when the programmer commands it to. (Ex. Manually exiting the window)
+
+
+6.	What is the difference between a label and a button?
+
+A label is essentially a "placeholder" for what the program
+is intending to run. For example, if a user wants to display 
+a class list, the list will be displayed in the label. The button, 
+however, is what initiates the whole program. Using the class list 
+example, nothing will show up in the label until a user presses the button.
