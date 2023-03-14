@@ -72,7 +72,7 @@ NumberFormat nf = NumberFormat.getPercentInstance();
 		{
 			System.out.println("Problem reading file. ");
 			System.err.print("IOException: " + e.getMessage());
-		}
+		 }
 		
 		
 
