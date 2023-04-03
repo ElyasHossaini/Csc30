@@ -23,9 +23,7 @@ public class Demo {
 	private JTextField Name1;
 	private JTextField Name2;
 
-	/**
-	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
