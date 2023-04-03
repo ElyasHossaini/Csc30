@@ -1,0 +1,46 @@
+Critical Thinking Questions: Chapter 11
+
+1. Can data in memory be called a file? Explain.
+
+No, data in memory cannot be called a file. This is because memory is not a continuous or
+persistent medium and, therefore, cannot be written over.
+
+2. Write the import statement required to access the File Class in an application.
+Import java.io*;
+
+3. Identify the error in the following statement: File textFile = new
+File(“c:\inventory.txt”);
+
+The error is that a “\” is missing before the file name.
+The correct code is File textFile = new File(“c:\\inventory.txt”);
+
+4. Which statement is used to write an exception handler?
+
+The statement used to write an exception handler is the try-catch-finally statement.
+
+a. Write an exception handler to handle an IOException if a specified file name
+cannot be used to create a file. The exception handler should display
+appropriate messages to the user.
+
+catch(IOException e) 
+{
+System.out.println(“File could not be created.”);
+System.err.println(“IOException:” + e.getMessage());
+}
+
+5. What is the name of the stream for displaying error messages?
+The err stream is used for displaying error messages.
+
+a. Where are these messages displayed?
+These messages are displayed on the screen.
+
+7. What two classes are used together to write data
+to a file?
+
+You need to use the Java FileWriter class and the Java BufferedWriter class.
+
+8.Write a statement to convert account balances
+that have been read from a text file to a double
+value and add them to totalbalance
+
+totalBalance+= Double.parseDouble(accountBalance);
