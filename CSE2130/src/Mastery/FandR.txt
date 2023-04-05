@@ -1,1 +1,1 @@
-This will be my replacement .txtfile. Next time you open with, it will be my Finding .txtfile.    
+This will be my replacement notepad. Next time you open with, it will be my Finding notepad.      
