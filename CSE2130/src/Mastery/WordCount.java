@@ -17,6 +17,7 @@ package Mastery;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Serializable;
 
 public class WordCount 
 {   
@@ -94,6 +95,8 @@ public class WordCount
 			}
 		}
 	}	
+	
+	
 }
 /*
 Number Of Characters In A File : 33.0 characters.
