@@ -17,7 +17,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class Demo {
+ public class Demo {
 
 	private JFrame frame;
 	private JTextField Name1;
