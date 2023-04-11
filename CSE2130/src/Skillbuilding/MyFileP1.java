@@ -18,12 +18,17 @@ public class MyFileP1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		//ask for file name
 		System.out.println("What is the name of your file?");
 		
+		//get user input fro file name
 		Scanner input = new Scanner(System.in);
 		
+		//stores inout into textfile string
 		String textfile = input.nextLine();
 		
+		//checks if file exists or not
 		File textFile = new File(textfile);
 		if (textFile.exists())
 		{

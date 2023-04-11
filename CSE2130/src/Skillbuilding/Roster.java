@@ -1,3 +1,16 @@
+/*
+
+Program: Roster         Date: 4/1/2023
+
+Purpose: Create a roster application that prompts the user for the name of the file to store student names and then prompts the user for the number of
+students in the class.
+
+Author: Elyas Hossaini
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
 package Skillbuilding;
 
 import java.io.BufferedWriter;
@@ -9,38 +22,43 @@ public class Roster {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 
-	        System.out.print("Enter the name of the file to store student names: ");
-	        String fileName = scanner.nextLine();
+		// Prompt user for file name to store student names
+		System.out.print("Enter the name of the file to store student names: ");
+		String fileName = scanner.nextLine();
 
-	        System.out.print("Enter the number of students in the class: ");
-	        int numStudents = scanner.nextInt();
-	        scanner.nextLine(); // Consume the remaining newline character
+		// Prompt user for number of students
+		System.out.print("Enter the number of students in the class: ");
+		int numStudents = scanner.nextInt();
+		scanner.nextLine(); // Consume the remaining newline character
 
-	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
-	            for (int i = 0; i < numStudents; i++) {
-	                System.out.printf("Enter the first and last name of student %d: ", i + 1);
-	                String firstName = scanner.next();
-	                String lastName = scanner.next();
-	                scanner.nextLine(); // Consume the remaining newline character
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+		    // Loop through each student and prompt user for their first and last name
+		    for (int i = 0; i < numStudents; i++) {
+		        System.out.printf("Enter the first and last name of student %d: ", i + 1);
+		        String firstName = scanner.next();
+		        String lastName = scanner.next();
+		        scanner.nextLine(); // Consume the remaining newline character
 
-	                StuName student = new StuName(firstName, lastName);
-	                writer.write(student.toString());
-	                writer.newLine();
-	            }
-	        } catch (IOException e) {
-	            System.out.println("Error writing to file: " + e.getMessage());
-	        }
+		        // Create a new StuName object and write it to the file
+		        StuName student = new StuName(firstName, lastName);
+		        writer.write(student.toString());
+		        writer.newLine();
+		    }
+		} catch (IOException e) {
+		    System.out.println("Error writing to file: " + e.getMessage());
+		}
 
-	        System.out.println("Class Roster:");
-	        try (Scanner fileScanner = new Scanner(new java.io.File(fileName))) {
-	            while (fileScanner.hasNextLine()) {
-	                System.out.println(fileScanner.nextLine());
-	            }
-	        } catch (IOException e) {
-	            System.out.println("Error reading from file: " + e.getMessage());
-	        }
+		// Display the class roster by reading from the file
+		System.out.println("Class Roster:");
+		try (Scanner fileScanner = new Scanner(new java.io.File(fileName))) {
+		    while (fileScanner.hasNextLine()) {
+		        System.out.println(fileScanner.nextLine());
+		    }
+		} catch (IOException e) {
+		    System.out.println("Error reading from file: " + e.getMessage());
+		}
 	    }
 
 	}
