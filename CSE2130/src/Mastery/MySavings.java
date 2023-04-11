@@ -35,8 +35,9 @@ public class MySavings {
 		    	Scanner user3 = new Scanner(System.in);
 		    	Scanner user4 = new Scanner(System.in);
 		    	
-		    	// Create two FileReader objects in and readFile
 		    	String read, strDouble;
+		    	
+		    	// Create two FileReader objects in and readFile
 		    	FileReader in;
 		    	BufferedReader readFile;
 		    	
