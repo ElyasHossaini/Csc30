@@ -37,7 +37,7 @@ package Skillbuilding;
 				return(new Drum(name));
 		} else if (instrumentChoice.equalsIgnoreCase("C")) {
 			return(new Cymbal(name));
-	    } else {	//default to clarinet   YOU ARE HERE
+	    } else {	
 			return(new Clarinet(name));
 		}
 	}
