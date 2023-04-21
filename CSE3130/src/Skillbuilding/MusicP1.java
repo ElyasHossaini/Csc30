@@ -28,9 +28,9 @@ package Skillbuilding;
 		instrumentChoice = input.nextLine();
 		System.out.print("Enter the band member's name: ");
 		name = input.nextLine();
-		if (instrumentChoice.equalsIgnoreCase("V")) {
+		if (instrumentChoice.equalsIgnoreCase("Vocals")) {
 			return(new Vocal(name));
-		} else if (instrumentChoice.equalsIgnoreCase("P")) {
+		} else if (instrumentChoice.equalsIgnoreCase("Piccolo")) {
 			return(new Piccolo(name));
 		} else {	//default to clarinet
 			return(new Clarinet(name));
@@ -53,12 +53,12 @@ package Skillbuilding;
 
 		System.out.print("Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? ");
 		performanceChoice = input.nextLine();
-		while (!performanceChoice.equalsIgnoreCase("L")) {
-			if (performanceChoice.equalsIgnoreCase("S")) {
+		while (!performanceChoice.equalsIgnoreCase("Leave")) {
+			if (performanceChoice.equalsIgnoreCase("Solo")) {
 				band = new Performance(bandMember1);
-			} else if (performanceChoice.equalsIgnoreCase("D")) {
+			} else if (performanceChoice.equalsIgnoreCase("Duet")) {
 				band = new Performance(bandMember1, bandMember2);
-			} else if (performanceChoice.equalsIgnoreCase("T")) {	
+			} else if (performanceChoice.equalsIgnoreCase("Trio")) {	
 				band = new Performance(bandMember1, bandMember2, bandMember3);
 			}
 			else {
@@ -72,31 +72,32 @@ package Skillbuilding;
 	}
 }
 /*
- Select an instrument for the band member. 
- Vocals, Piccolo, or Clarinet: v
- Enter the band member's name: nolan
- Select an instrument for the band member. 
- Vocals, Piccolo, or Clarinet: p
- Enter the band member's name: elyas
- Select an instrument for the band member. 
- Vocals, Piccolo, or Clarinet: p
- Enter the band member's name: manav
- Select an instrument for the band member. 
- Vocals, Piccolo, or Clarinet: c
- Enter the band member's name: miles
- nolan sings LaLaLa. elyas plays peep. manav plays peep. miles plays squawk.
+Select an instrument for the band member. 
+Vocals, Piccolo, or Clarinet: Vocals
+Enter the band member's name: John
+Select an instrument for the band member. 
+Vocals, Piccolo, or Clarinet: Piccolo
+Enter the band member's name: Jane
+Select an instrument for the band member. 
+Vocals, Piccolo, or Clarinet: Clarinet
+Enter the band member's name: mike
+Select an instrument for the band member. 
+Vocals, Piccolo, or Clarinet: Vocals
+Enter the band member's name: Sarah
+John sings LaLaLa. Jane plays peep. mike plays squawk. Sarah sings LaLaLa.
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? s
- LaLaLa
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Solo
+LaLaLa
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? d
- LaLaLapeep
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Duet
+LaLaLapeep
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? t
- LaLaLapeeppeep
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Trio
+LaLaLapeepsquawk
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? q
- LaLaLapeeppeepsquawk
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Quartet
+LaLaLapeepsquawkLaLaLa
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? l
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Leave
+
 */

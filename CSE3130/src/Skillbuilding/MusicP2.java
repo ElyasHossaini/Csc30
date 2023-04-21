@@ -29,13 +29,13 @@ package Skillbuilding;
 		instrumentChoice = input.nextLine();
 		System.out.print("Enter the band member's name: ");
 		name = input.nextLine();
-		if (instrumentChoice.equalsIgnoreCase("V")) {
+		if (instrumentChoice.equalsIgnoreCase("Vocals")) {
 			return(new Vocal(name));
-		} else if (instrumentChoice.equalsIgnoreCase("P")) {
+		} else if (instrumentChoice.equalsIgnoreCase("Piccolo")) {
 			return(new Piccolo(name));
-		} else if (instrumentChoice.equalsIgnoreCase("D")) {
+		} else if (instrumentChoice.equalsIgnoreCase("Drums")) {
 				return(new Drum(name));
-		} else if (instrumentChoice.equalsIgnoreCase("C")) {
+		} else if (instrumentChoice.equalsIgnoreCase("Cymbals")) {
 			return(new Cymbal(name));
 	    } else {	
 			return(new Clarinet(name));
@@ -58,12 +58,12 @@ package Skillbuilding;
 
 		System.out.print("Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? ");
 		performanceChoice = input.nextLine();
-		while (!performanceChoice.equalsIgnoreCase("L")) {
-			if (performanceChoice.equalsIgnoreCase("S")) {
+		while (!performanceChoice.equalsIgnoreCase("Leave")) {
+			if (performanceChoice.equalsIgnoreCase("Solo")) {
 				band = new Performance(bandMember1);
-			} else if (performanceChoice.equalsIgnoreCase("D")) {
+			} else if (performanceChoice.equalsIgnoreCase("Duet")) {
 				band = new Performance(bandMember1, bandMember2);
-			} else if (performanceChoice.equalsIgnoreCase("T")) {	
+			} else if (performanceChoice.equalsIgnoreCase("Trio")) {	
 				band = new Performance(bandMember1, bandMember2, bandMember3);
 			}
 			else {
@@ -77,31 +77,31 @@ package Skillbuilding;
 	}
 }
 /*
- Select an instrument for the band member. 
- Vocals, Piccolo, Clarinet, Drums, or Cymbals: d
- Enter the band member's name: kyle
- Select an instrument for the band member. 
- Vocals, Piccolo, Clarinet, Drums, or Cymbals: c
- Enter the band member's name: johnnah
- Select an instrument for the band member. 
- Vocals, Piccolo, Clarinet, Drums, or Cymbals: v
- Enter the band member's name: manny
- Select an instrument for the band member. 
- Vocals, Piccolo, Clarinet, Drums, or Cymbals: p
- Enter the band member's name: jeff
- kyle plays Thump. johnnah plays Clang. manny sings LaLaLa. jeff plays peep.
+Select an instrument for the band member. 
+Vocals, Piccolo, Clarinet, Drums, or Cymbals: Vocals
+Enter the band member's name: Sarah
+Select an instrument for the band member. 
+Vocals, Piccolo, Clarinet, Drums, or Cymbals: Clarinet
+Enter the band member's name: Elyas
+Select an instrument for the band member. 
+Vocals, Piccolo, Clarinet, Drums, or Cymbals: Drums
+Enter the band member's name: Idrees
+Select an instrument for the band member. 
+Vocals, Piccolo, Clarinet, Drums, or Cymbals: Cymbals
+Enter the band member's name: Neda
+Sarah sings LaLaLa. Elyas plays squawk. Idrees plays Thump. Neda plays Clang.
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? s
- Thump
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Solo
+LaLaLa
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? d
- ThumpClang
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Duet
+LaLaLasquawk
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? t
- ThumpClangLaLaLa
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Trio
+LaLaLasquawkThump
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? q
- ThumpClangLaLaLapeep
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Quartet
+LaLaLasquawkThumpClang
 
- Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? l
+Would you like to hear a Solo, a Duet, a Trio, a quartet, or Leave? Leave
 */
