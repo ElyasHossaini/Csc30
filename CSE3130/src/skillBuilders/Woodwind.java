@@ -1,4 +1,4 @@
-package Skillbuilding;
+package skillBuilders;
 
 /**
  * Woodwind class.

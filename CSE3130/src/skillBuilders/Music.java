@@ -1,4 +1,4 @@
-package Skillbuilding;
+package skillBuilders;
 
 /*
  * Music.java from Chapter 8
@@ -32,15 +32,21 @@ package Skillbuilding;
 			return(new Vocal(name));
 		} else if (instrumentChoice.equalsIgnoreCase("P")) {
 			return(new Piccolo(name));
-		} else {	//default to clarinet
+		} else if (instrumentChoice.equalsIgnoreCase("C")){	
 			return(new Clarinet(name));
+		} else if(instrumentChoice.equalsIgnoreCase("Cy"))
+		{
+			return(new Cymbal(name));
+		}else { //default set to Drum
+			return(new Drum(name));
 		}
+
 	}
 
 
 	public static void main(String[] args) {
 		Performance band;
-		Instrument bandMember1, bandMember2, bandMember3;
+		Instrument bandMember1, bandMember2, bandMember3, bandMember4;
 		Scanner input = new Scanner(System.in);
 		String performanceChoice;
 
@@ -48,21 +54,24 @@ package Skillbuilding;
 		bandMember1 = assignInstrument();
 		bandMember2 = assignInstrument();
 		bandMember3 = assignInstrument();
-		System.out.println(bandMember1 + " " + bandMember2 + " " + bandMember3 + "\n");
+		bandMember4 = assignInstrument();
+		System.out.println(bandMember1 + " " + bandMember2 + " " + bandMember3 + " " + bandMember4 + "\n");
 
-		System.out.print("Would you like to hear a Solo, a Duet, a Trio, or Leave? ");
+		System.out.print("Would you like to hear a Solo, a Duet, a Trio, quartet or Leave? ");
 		performanceChoice = input.nextLine();
 		while (!performanceChoice.equalsIgnoreCase("L")) {
 			if (performanceChoice.equalsIgnoreCase("S")) {
 				band = new Performance(bandMember1);
 			} else if (performanceChoice.equalsIgnoreCase("D")) {
 				band = new Performance(bandMember1, bandMember2);
-			} else {	//default  to trio
+			} else if (performanceChoice.equalsIgnoreCase("T")){
 				band = new Performance(bandMember1, bandMember2, bandMember3);
+			}else { //default is set to quartet
+				band = new Performance(bandMember1, bandMember2, bandMember3, bandMember4);
 			}
 			band.begin();
 
-			System.out.print("\nWould you like to hear a Solo, a Duet, a Trio, or Leave? ");
+			System.out.print("\nWould you like to hear a Solo, a Duet, a Trio, quartet, or Leave? ");
 			performanceChoice = input.nextLine();
 		}
 	}

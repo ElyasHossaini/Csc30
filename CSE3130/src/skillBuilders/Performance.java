@@ -1,5 +1,4 @@
-package Skillbuilding;
-
+package skillBuilders;
 /**
  * Performance class.
  */
@@ -46,7 +45,6 @@ public class Performance {
 		arrangement = trio_1.makeSound() + trio_2.makeSound() + trio_3.makeSound();
 	}
 	
-	
 	public Performance(Instrument q1, Instrument q2, Instrument q3, Instrument q4) {
 		quartet_1 = q1;
 		quartet_2 = q2;
@@ -54,7 +52,6 @@ public class Performance {
 		quartet_4 = q4;
 		arrangement = quartet_1.makeSound() + quartet_2.makeSound() + quartet_3.makeSound() + quartet_4.makeSound();
 	}
-
 
 	/** 
 	 * Begins the performance.

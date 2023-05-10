@@ -1,17 +1,17 @@
-package Skillbuilding;
+package skillBuilders;
 
-/*
- * Clarinet class.
+/**
+ * Piccolo class.
  */
-public class Clarinet extends Woodwind {
+public class Piccolo extends Woodwind {
 		
 	/**
 	 * constructor
 	 * pre: none
-	 * post: An clarinet has been created.
+	 * post: An piccolo has been created.
 	 */
-	public Clarinet(String clarinetist) {
-		super(clarinetist);
+	public Piccolo(String piccoloist) {
+		super(piccoloist);
 	}
 
 
@@ -21,7 +21,7 @@ public class Clarinet extends Woodwind {
 	 * post: The sound made by the instrument is returned.
 	 */
 	public String makeSound() {
-	 	return("squawk");
+	 	return("peep");
 	}
 
 	
