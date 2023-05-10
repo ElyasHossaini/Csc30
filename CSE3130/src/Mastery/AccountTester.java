@@ -143,3 +143,61 @@ public class AccountTester {
 	}
 
 }
+/*
+
+ (A)ccount \ (C)hange address \ (W)ithdraw \ (D)eposit \ (Q)uit 
+Enter choice: 
+a
+Enter Account number (1, or 2) : 
+2
+bcorporation
+building corporation St road nashville USA 61fki9
+Current balance is $400.00
+10 dollars is removed from your account. For being below $500
+New balance: 390.0
+
+ (A)ccount \ (C)hange address \ (W)ithdraw \ (D)eposit \ (Q)uit 
+Enter choice: 
+c
+Enter Account number (1, or 2) : 
+2
+bcorporation
+building corporation St road nashville USA 61fki9
+Current balance is $390.00
+Change (s)treet, (c)ity, (p)rovince, (po)stal code
+s
+Please enter new street: 
+lol street
+bcorporation
+building corporation lol nashville USA 61fki9
+Current balance is $390.00
+
+ (A)ccount \ (C)hange address \ (W)ithdraw \ (D)eposit \ (Q)uit 
+Enter choice: 
+w
+Enter Account number (1, or 2) : 
+2
+bcorporation
+building corporation lol nashville USA 61fki9
+Current balance is $390.00
+How much would you like to withdraw?
+12
+New balance: 378.0
+
+ (A)ccount \ (C)hange address \ (W)ithdraw \ (D)eposit \ (Q)uit 
+Enter choice: 
+d
+Enter Account number (1, or 2) : 
+2
+bcorporation
+building corporation lol nashville USA 61fki9
+Current balance is $378.00
+How much would you like to deposit?
+34
+New balance: 412.0
+
+ (A)ccount \ (C)hange address \ (W)ithdraw \ (D)eposit \ (Q)uit 
+Enter choice: 
+q
+
+*/
