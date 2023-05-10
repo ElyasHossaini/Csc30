@@ -199,5 +199,4 @@ New balance: 412.0
  (A)ccount \ (C)hange address \ (W)ithdraw \ (D)eposit \ (Q)uit 
 Enter choice: 
 q
-
 */
