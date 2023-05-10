@@ -1,16 +1,4 @@
-/*
 
-Program: Vehicle.java          Last Date of this Revision: April 20, 2023
-
-Purpose: create a Vehicle abstract class and 3 others, car, truck, minivan which are inheriting the Vehicle class, and contain special or distinct characteristics 
-to each vehicle
-
-Author: Your Name, Elyas Hossaini	
-School: CHHS
-Course: Computer Programming 30
- 
-
-*/
 package Mastery;
 
 public abstract class Vehicle 

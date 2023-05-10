@@ -1,0 +1,40 @@
+1. The difference between a has-a and is-a relationship among classes:
+A has-a relationship (also known as composition or aggregation) refers to the situation where one class contains an instance of another class as a member variable. It represents a "whole-part" relationship, where the containing class is composed of or contains instances of other classes. The contained object's lifecycle is typically tied to the containing object.
+
+An is-a relationship (also known as inheritance or subclassing) refers to the situation where one class is derived from another class, inheriting its properties and behaviors. The derived class is a more specialized version of the base class, and the base class is a more general version of the derived class. The is-a relationship is transitive, meaning that if class B is-a class A, and class C is-a class B, then class C is also a class A.
+
+2. If a base class has a public method go() and a derived class has a public method stop(), which method will be available to an object of the derived class?
+An object of the derived class will have access to both the go() and stop() methods. This is because the derived class inherits the properties and behaviors of the base class, and therefore has access to the public method go(). Additionally, it has its own public method stop().
+
+3. Compare and contrast implementing an abstract method to overriding a method.
+Implementing an abstract method is the process of providing a concrete implementation for an abstract method defined in an abstract class or an interface. Abstract methods do not have a default implementation and must be implemented by any non-abstract subclass or implementing class.
+
+Overriding a method is the process of providing a new implementation for a method that is already defined in a base class. The new implementation in the derived class replaces or extends the functionality provided by the base class's method. Overriding a method allows a subclass to change or refine the behavior inherited from the base class.
+
+4. Compare and contrast an abstract class to an interface.
+An abstract class is a class that cannot be instantiated and may contain abstract methods (methods without an implementation) and/or fully implemented methods. Abstract classes can have constructors, instance variables, and non-static methods. They are used to provide a base for deriving other classes with shared functionality or properties.
+
+An interface is a collection of abstract methods (and, in some languages, default methods or static methods) that can be implemented by any class. Interfaces define a contract that the implementing class must adhere to. Interfaces cannot be instantiated, and they do not contain constructors, instance variables, or non-static methods with implementations (except for default methods in some languages, such as Java).
+
+The main differences between abstract classes and interfaces are:
+
+Abstract classes can have instance variables and constructors, while interfaces cannot.
+Abstract classes can have fully implemented methods, while interfaces typically only have abstract methods (with some exceptions, like default methods in Java).
+A class can inherit from only one abstract class but can implement multiple interfaces.
+
+6. 
+a) The doThat() method in Wo is an abstract method. It is declared in the interface but does not have an implementation.
+
+b) Wo is an interface. It defines a contract with the doThat() method that any class implementing the interface must adhere to.
+
+c) The doThat() method is implemented in Roo because Roo implements the Wo interface. Classes that implement an interface must provide an implementation for all of its abstract methods.
+
+d) The methods available to a Roo object are: doThis(), doNow(), and doThat(). However, doThat() is private, so it can only be accessed from within the Roo class.
+
+e) The implementation of doThis() in Roo overrides the implementation of doThis() in Bo. When a Roo object calls the doThis() method, it will execute the implementation provided in the Roo class, not the one in the Bo class.
+
+f) The statement super(1) in Roo calls the constructor of the superclass Bo with an argument of 1. This initializes the x variable in Bo with the value 1.
+
+g) The doThis() method in Bo cannot be directly called from a Roo object, as it has been overridden by the doThis() method in Roo. However, you can indirectly call the doThis() method in Bo from a Roo object by calling super.doThis() from within a method of the Roo class.
+
+h) Yes, a method in Roo can call the doThis() method in Bo. To do so, you need to use the keyword 'super' followed by the method name, like this: super.doThis(). This will call the doThis() method of the superclass Bo.
