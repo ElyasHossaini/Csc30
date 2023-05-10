@@ -6,7 +6,7 @@ Program: AccountTester.java          Last Date of this Revision: May 1, 2023
 Purpose: create a personal Account and Business Account classes that inherit the account class presented in chapter 7. 
 introducing minimum balances where money will be withdrawn if the accounts are below that requirement.
 
-Author: Your Name, Bryce Ilcan	
+Author: Your Name, Elyas Hossaini	
 School: CHHS
 Course: Computer Programming 30
  

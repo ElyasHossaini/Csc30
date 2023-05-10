@@ -7,7 +7,7 @@ The Uemployee class should contain memeber methods for returning the employee na
 Create faculty and staff classes that inherit the UEmployee class. the faculty class should include
 memebrs for storing and returning the department name. the staff class should include members for storing and returning the job title.
 
-Author: Your Name, Bryce Ilcan	
+Author: Your Name, Elyas Hossaini	
 School: CHHS
 Course: Computer Programming 30
  
