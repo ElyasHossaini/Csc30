@@ -1,3 +1,14 @@
+/*
+ * Program: AccountTester.java
+ * Last Date of this Revision: May 1, 2023
+ * 
+ * Purpose: Create a personal Account and Business Account classes that inherit the Account class presented in Chapter 7.
+ * Introduce minimum balances where money will be withdrawn if the accounts are below that requirement.
+ * 
+ * Author: Your Name, Elyas Hossaini
+ * School: CHHS
+ * Course: Computer Programming 30
+ */
 package Skillbuilding;
 
 public class Stack2Tester {
@@ -23,3 +34,13 @@ public class Stack2Tester {
 	}
 
 }
+/*
+Top of Stack S2: Yellow
+Items in Stack S2: 3
+Top of Stack S2: Green
+Items in Stack S2: 2
+Adding new item: Blue
+Top of Stack S2: Blue
+Items in Stack S2: 3
+
+*/
