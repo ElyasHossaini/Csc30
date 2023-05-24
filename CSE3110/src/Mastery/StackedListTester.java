@@ -1,3 +1,14 @@
+/*
+
+Program: StackedList         Date: 5/15/2023
+
+Purpose: Create a stacklist program that implements a stack using a linked list that can store object data.
+
+Author: Elyas Hossaini 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
 package Mastery;
 
 public class StackedListTester {
@@ -25,3 +36,23 @@ public class StackedListTester {
 	}
 
 }
+/*
+Current items are:
+Yellow
+Green
+Blue
+
+The top item in the stack is: Yellow
+Removing the top item
+Current items are:
+Green
+Blue
+
+
+Removing all items
+There are no items in the stack.
+
+New item being added.
+Current items are:
+Red
+*/
