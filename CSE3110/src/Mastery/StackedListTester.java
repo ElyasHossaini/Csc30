@@ -5,7 +5,7 @@ public class StackedListTester {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StackList stack = new StackList();
-		
+		 
 		stack.push("Blue");
 		stack.push("Green");
 		stack.push("Yellow");
