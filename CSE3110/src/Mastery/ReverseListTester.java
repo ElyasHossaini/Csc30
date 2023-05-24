@@ -16,28 +16,28 @@ import java.util.*;
 public class ReverseListTester {
 
     public static void main(String[] args) {
-        ReverseList stack = new ReverseList();
-        Scanner scanner = new Scanner(System.in);
+    	ReverseList stack = new ReverseList();
+    	Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter up to 10 numbers (or enter 999 to terminate): ");
+    	System.out.println("Please enter up to 10 numbers (or enter 999 to terminate): ");
 
-        int count = 0;
-        while(count < 10) {
-            int num = scanner.nextInt();
+    	int count = 0;
+    	while (count < 10) {
+    	    int num = scanner.nextInt(); // Read the input number from the user
 
-            if (num == 999) {
-                break;
-            }
+    	    if (num == 999) {
+    	        break; // Exit the loop if the user enters 999
+    	    }
 
-            stack.push(num);
-            count++;
-        }
+    	    stack.push(num); // Push the number onto the stack
+    	    count++;
+    	}
 
-        System.out.println("The reversed list of numbers is: ");
+    	System.out.println("The reversed list of numbers is: ");
 
-        while (!stack.isEmpty()) {
-            System.out.println(stack.pop());
-        }
+    	while (!stack.isEmpty()) {
+    	    System.out.println(stack.pop()); // Pop and print each number from the stack
+    	}
         
 
     }

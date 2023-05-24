@@ -16,23 +16,25 @@ public class StackedListTester {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StackList stack = new StackList();
-		 
-		stack.push("Blue");
-		stack.push("Green");
-		stack.push("Yellow");
-		System.out.println(stack.toString());
-		System.out.println("The top item in the stack is: " + stack.getTop());
 		
+		stack.push("Blue"); // Push "Blue" onto the stack
+		stack.push("Green"); // Push "Green" onto the stack
+		stack.push("Yellow"); // Push "Yellow" onto the stack
+		System.out.println(stack.toString()); // Print the stack
+
+		System.out.println("The top item in the stack is: " + stack.getTop()); // Print the top item of the stack
+
 		System.out.println("Removing the top item");
-		stack.pop();
-		System.out.println(stack.toString() + "\n");
+		stack.pop(); // Remove the top item from the stack
+		System.out.println(stack.toString() + "\n"); // Print the updated stack
+
 		System.out.println("Removing all items");
-		stack.makeEmpty();
-		System.out.println(stack.toString() + "\n");
-		
-		stack.push("Red");
+		stack.makeEmpty(); // Remove all items from the stack
+		System.out.println(stack.toString() + "\n"); // Print the empty stack
+
+		stack.push("Red"); // Push "Red" onto the stack
 		System.out.println("New item being added.");
-		System.out.println(stack.toString());
+		System.out.println(stack.toString()); // Print the stack
 	}
 
 }

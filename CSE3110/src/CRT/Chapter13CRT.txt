@@ -1,0 +1,21 @@
+1.Similarities between an array and a stack: Both arrays and stacks are linear data structures that can be used to store data elements. They allow access to elements based on their location within the structure. Both data structures can also be implemented using various programming languages. Additionally, the size of both an array and a stack (especially when implemented as an array-based stack) has to be defined beforehand in many programming languages.
+
+3.The code creates a stack object s with a capacity of 10. It pushes 5 and 8 onto the stack, then pops the top element (8) into x. Then it pushes x (8), 12, and 13 onto the stack. The top element (13) is then popped into y. The first print statement will output "8 13". Then, it pops the top element (12) into y and sets x to the top of the stack (8). The second print statement will output "8 12". So the complete output will be:
+
+8 13
+8 12
+
+4."Hot plate" problem analogy to a stack: A stack is a Last-In-First-Out (LIFO) data structure, which means that the most recently added (last in) element is the first one to be removed (first out). This is similar to a pile of salad plates in a restaurant: the most recently washed (and therefore warmest) plate is placed on top of the pile and is the first one to be taken by a customer. This is analogous to "pushing" the plate onto the stack and then "popping" it off when it's needed.
+
+5.The code creates a queue object q with a capacity of 10. It enqueues 5 and 8 into the queue, then dequeues the front element (5) into x. Then it enqueues x (5), 12, and 13 into the queue. The front element (8) is then dequeued into y. The first print statement will output "5 8". Then, it dequeues the front element (5) into y and sets x to the front of the queue (12). The second print statement will output "12 5". So the complete output will be:
+
+5 8
+12 5
+
+6.Difference between a FIFO and a LIFO data structure: FIFO stands for First-In-First-Out, which means that the first element that was added to the data structure is the first one to be removed. This is how a queue typically works. On the other hand, LIFO stands for Last-In-First-Out, meaning the last element that was added is the first one to be removed. This is the principle upon which a stack operates.
+
+7.Real-world situations represented as a queue:
+
+a. Call Center: When you call customer service, you typically are placed in a queue. The first caller to be placed in the queue is the first one to be serviced, and any later callers must wait their turn.
+
+b. Printing Queue: In an office with a shared printer, print requests go to a print queue. The first job sent to the printer will be the first one printed, while all other jobs must wait in order.

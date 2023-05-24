@@ -16,21 +16,21 @@ public class QueueListTester {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		QueueList ql = new QueueList();
-		
+
 		System.out.println("Adding to Queue:");
-		
-		ql.enqueue("red");
-		ql.enqueue("blue");
-		ql.enqueue("yellow");
-		ql.enqueue("green");
-		
-		System.out.println("Begging of queue: " + ql.Top());
-		System.out.println("Items in queue: " + ql.Size());
-		
+
+		ql.enqueue("red"); // Add "red" to the queue
+		ql.enqueue("blue"); // Add "blue" to the queue
+		ql.enqueue("yellow"); // Add "yellow" to the queue
+		ql.enqueue("green"); // Add "green" to the queue
+
+		System.out.println("Beginning of queue: " + ql.Top()); // Print the element at the beginning of the queue
+		System.out.println("Items in queue: " + ql.Size()); // Print the number of items in the queue
+
 		System.out.println("Removing front item: ");
-		ql.dequeue();
-		System.out.println("Front of queue: "+ ql.Top());
-		System.out.println("Items in queue: "+ ql.Size());
+		ql.dequeue(); // Remove the front item from the queue
+		System.out.println("Front of queue: " + ql.Top()); // Print the new front item of the queue
+		System.out.println("Items in queue: " + ql.Size()); // Print the updated number of items in the queue
 		
 		
 
