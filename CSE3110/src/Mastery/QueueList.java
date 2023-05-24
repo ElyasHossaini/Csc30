@@ -51,7 +51,7 @@ public class QueueList {
 		}
 		else
 		{
-			return("There are no items in the stack.");
+			return("There are no items in the queue.");
 		}
 	}
 	

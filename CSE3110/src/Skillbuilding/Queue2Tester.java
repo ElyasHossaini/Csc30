@@ -1,9 +1,9 @@
 /*
- * Program: AccountTester.java
- * Last Date of this Revision: May 1, 2023
+ * Program: Queue2.java
+ * Last Date of this Revision: May 13, 2023
  * 
- * Purpose: Create a personal Account and Business Account classes that inherit the Account class presented in Chapter 7.
- * Introduce minimum balances where money will be withdrawn if the accounts are below that requirement.
+ * Purpose: Create a Queue2 class that implements a queue data structure for data type Object. Since Object is the superclass of other objects, a Queue2 object can store objects from any class. Write appropriate client code to test
+the Object2 class.
  * 
  * Author: Your Name, Elyas Hossaini
  * School: CHHS
@@ -16,21 +16,19 @@ public class Queue2Tester {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Queue2 q2 = new Queue2(4);
-		
-		System.out.println("Adding to q2");
-		q2.enqueue("Red");
-		q2.enqueue("Orange");
-		q2.enqueue("Brown");
-		q2.enqueue("Yellow");
-		
-		
-		System.out.println("Front of q2: "+ q2.front());
-		System.out.println("Items in q2: "+ q2.size());
-		
-		System.out.println("Removing front item: "+ q2.dequeue());
-		System.out.println("Front of q2: "+ q2.front());
-		System.out.println("Items in q2: "+ q2.size());
 
+		System.out.println("Adding to q2");
+		q2.enqueue("Red"); // Add "Red" to the queue
+		q2.enqueue("Orange"); // Add "Orange" to the queue
+		q2.enqueue("Brown"); // Add "Brown" to the queue
+		q2.enqueue("Yellow"); // Add "Yellow" to the queue
+
+		System.out.println("Front of q2: " + q2.front()); // Print the front item of the queue
+		System.out.println("Items in q2: " + q2.size()); // Print the number of items in the queue
+
+		System.out.println("Removing front item: " + q2.dequeue()); // Remove and print the front item of the queue
+		System.out.println("Front of q2: " + q2.front()); // Print the new front item of the queue
+		System.out.println("Items in q2: " + q2.size()); // Print the updated number of items in the queue
 
 	}
 

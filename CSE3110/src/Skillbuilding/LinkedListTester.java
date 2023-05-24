@@ -1,9 +1,11 @@
 /*
- * Program: AccountTester.java
- * Last Date of this Revision: May 1, 2023
+ * Program: LinkedList.java
+ * Last Date of this Revision: May 12, 2023
  * 
- * Purpose: Create a personal Account and Business Account classes that inherit the Account class presented in Chapter 7.
- * Introduce minimum balances where money will be withdrawn if the accounts are below that requirement.
+ * Purpose: Modify the LinkedList class to include a member function size() that returns the number of items in the
+list. Modify the LinkedList class to include a member function addAtEnd() that adds a new item to the end of
+the linked list. Modify the LinkedList class to include a member function makeEmpty() that removes all the items in the
+list
  * 
  * Author: Your Name, Elyas Hossaini
  * School: CHHS
@@ -16,34 +18,34 @@ public class LinkedListTester {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LinkedList list = new LinkedList();
-		
-		list.addAtFront("Elyas");
-		list.addAtFront("Nolan");
-		list.addAtFront("Manav");
-		list.addAtFront("Mohammad");
-		list.addAtFront("Adam");
-		
-		System.out.println("List has " + list.size() + "");
-		
-		System.out.println(list);
-		
-		list.remove("Manav");
-		
-		System.out.println("List has " + list.size() + "");
-		
-		System.out.println(list);
-		
-		list.addAtEnd("Mr. Abdalla");
-		
-		System.out.println("List has " + list.size() + "");
-		
-		System.out.println(list);
-		
-		list.makeEmpty(null);
-		
-		System.out.println("List has " + list.size() + "");
-		
-		System.out.println(list);
+
+		list.addAtFront("Elyas"); // Add "Elyas" to the front of the list
+		list.addAtFront("Nolan"); // Add "Nolan" to the front of the list
+		list.addAtFront("Manav"); // Add "Manav" to the front of the list
+		list.addAtFront("Mohammad"); // Add "Mohammad" to the front of the list
+		list.addAtFront("Adam"); // Add "Adam" to the front of the list
+
+		System.out.println("List has " + list.size() + " elements");
+
+		System.out.println(list); // Print the list
+
+		list.remove("Manav"); // Remove the element "Manav" from the list
+
+		System.out.println("List has " + list.size() + " elements");
+
+		System.out.println(list); // Print the updated list
+
+		list.addAtEnd("Mr. Abdalla"); // Add "Mr. Abdalla" to the end of the list
+
+		System.out.println("List has " + list.size() + " elements");
+
+		System.out.println(list); // Print the updated list
+
+		list.makeEmpty(null); // Empty the list
+
+		System.out.println("List has " + list.size() + " elements");
+
+		System.out.println(list); // Print the empty list
 		
 		
 		

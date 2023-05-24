@@ -1,9 +1,9 @@
 /*
- * Program: AccountTester.java
- * Last Date of this Revision: May 1, 2023
+ * Program: Queue3.java
+ * Last Date of this Revision: May 14, 2023
  * 
- * Purpose: Create a personal Account and Business Account classes that inherit the Account class presented in Chapter 7.
- * Introduce minimum balances where money will be withdrawn if the accounts are below that requirement.
+ * Purpose: The Queue class is limited because the queue size cannot change from its initial size. Create a Queue3 class
+that implements a queue data structure using an ArrayList. Write appropriate client code to test the class
  * 
  * Author: Your Name, Elyas Hossaini
  * School: CHHS
@@ -16,19 +16,19 @@ public class Queue3Tester {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Queue3 q3 = new Queue3();
-		
-		System.out.println("Adding to q2");
-		q3.enqueue("Red");
-		q3.enqueue("Orange");
-		q3.enqueue("Brown");
-		q3.enqueue("Yellow");
-		
-		System.out.println("Front of q2: "+ q3.front());//
-		System.out.println("Items in q2: "+ q3.size());
-		
-		System.out.println("Removing front item: "+ q3.dequeue());
-		System.out.println("Front of q2: "+ q3.front());
-		System.out.println("Items in q2: "+ q3.size());
+
+		System.out.println("Adding to q3");
+		q3.enqueue("Red"); // Add "Red" to the queue
+		q3.enqueue("Orange"); // Add "Orange" to the queue
+		q3.enqueue("Brown"); // Add "Brown" to the queue
+		q3.enqueue("Yellow"); // Add "Yellow" to the queue
+
+		System.out.println("Front of q3: " + q3.front()); // Print the front item of the queue
+		System.out.println("Items in q3: " + q3.size()); // Print the number of items in the queue
+
+		System.out.println("Removing front item: " + q3.dequeue()); // Remove and print the front item of the queue
+		System.out.println("Front of q3: " + q3.front()); // Print the new front item of the queue
+		System.out.println("Items in q3: " + q3.size()); // Print the updated number of items in the queue
 
 	}
 
